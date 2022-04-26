@@ -1,6 +1,6 @@
 <template>
 <div id="app">
-  <nav-bar/>
+  <NawigacjaBar />
   <div class="auth-wrapper">
     <div class="auth-inner">
       <router-view />
@@ -10,12 +10,12 @@
 </template>
 
 <script>
-import NavBar from './components/NavBar.vue'
+import NawigacjaBar from './components/NawigacjaBar.vue'
 
 export default {
   name: 'App',
-  components:{
-    NavBar,
+  components: {
+    NawigacjaBar
   }
 }
 </script>

@@ -1,11 +1,11 @@
 <template>
-  <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>
+<!--  <head>-->
+<!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+<!--    <title>-->
 
-    </title>
+<!--    </title>-->
 
-  </head>
+<!--  </head>-->
   <!-- Default form register -->
   <form @submit.prevent="handleSubmit">
     <h3>Sign up</h3>
@@ -41,7 +41,7 @@
 </template>
 
 <script>
-import axios from 'axios'
+// import axios from 'axios'
 export default {
   name: 'RegistrationMain',
   data () {
@@ -53,20 +53,20 @@ export default {
         password_confirm: ''
       }
   },
-  methods: {
-    async handleSubmit() {
-      const response = await axios.post('Registration', {
-        first_name: this.first_name,
-        last_name: this.last_name,
-        email: this.email,
-        password: this.password,
-        password_confirm: this.password_confirm
-      });
+  // methods: {
+  //   async handleSubmit() {
+  //     const response = await axios.post('Registration', {
+  //       first_name: this.first_name,
+  //       last_name: this.last_name,
+  //       email: this.email,
+  //       password: this.password,
+  //       password_confirm: this.password_confirm
+  //     });
 
-      await this.$router.push('/Login');
-    }
-  }
-}
+      // await this.$router.push('/Login');
+//     }
+//   }
+ }
 
 </script>
 

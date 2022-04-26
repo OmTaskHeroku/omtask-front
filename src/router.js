@@ -1,16 +1,29 @@
-import Vue from 'vue'
-import Router from 'vue-router'
-import RegistrationMain from './components/RegistrationMain.vue'
-import LoginMain from './components/LoginMain.vue'
-import HomeMain from './components/HomeMain.vue'
+import { createWebHistory, createRouter } from "vue-router";
+import LoginMain from "@/components/LoginMain";
+import HomeMain from "@/components/HomeMain";
+import RegistrationMain from "@/components/RegistrationMain";
 
-Vue.use(Router);
+const routes = [
+    {
+        path: "/",
+        name: "HomeMain",
+        component: HomeMain,
+    },
+    {
+        path: "/login",
+        name: "LoginMain",
+        component: LoginMain,
+    },
+    {
+        path: "/registration",
+        name: "RegistrationMain",
+        component: RegistrationMain,
+    },
+];
 
-export default new Router({
-    mode: 'history',
-    routes:[
-        {path: '/Registration', component: RegistrationMain},
-        {path: '/Login', component: LoginMain },
-        {path: '/', component: HomeMain}
-    ]
-})
+const router = createRouter({
+    history: createWebHistory(),
+    routes,
+});
+
+export default router;
