@@ -3,8 +3,8 @@
     <h3>Login</h3>
 
     <div class="form-group">
-      <label>Email</label>
-      <input type="email" class="form-control" placeholder="Email"/>
+      <label>Username</label>
+      <input type="text" class="form-control" placeholder="Username"/>
     </div>
   <div class="form-group">
     <label>Password</label>

@@ -9,6 +9,10 @@
   <!-- Default form register -->
   <form @submit.prevent="handleSubmit">
     <h3>Sign up</h3>
+    <div class="form-group">
+      <label>Username</label>
+      <input type="text" class="form-control" v-model="username" placeholder="Username"/>
+    </div>
 
     <div class="form-group">
       <label>First Name</label>
@@ -46,6 +50,7 @@ export default {
   name: 'RegistrationMain',
   data () {
     return {
+        username: '',
         first_name: '',
         last_name: '',
         email: '',
