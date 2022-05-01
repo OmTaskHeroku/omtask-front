@@ -12,6 +12,11 @@
   </div>
 
   <button class="btn btn-primary btn-block">Login</button>
+
+  <p class="forgot-passwprd text-right">
+    <router-link to="forgot">Forgot password?</router-link>
+  </p>
+
 </form>
 </template>
 
