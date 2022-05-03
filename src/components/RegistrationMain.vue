@@ -40,6 +40,11 @@
     </div>
 
     <button class="btn btn-primary btn-block">Sign up</button>
+
+    <p class="login text-right">
+      <router-link to="login">Already Registered?</router-link>
+    </p>
+
   </form>
   <!-- Default form register -->
 </template>

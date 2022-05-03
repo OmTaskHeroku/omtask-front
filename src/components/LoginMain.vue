@@ -13,8 +13,12 @@
 
   <button class="btn btn-primary btn-block">Login</button>
 
-  <p class="forgot-passwprd text-right">
+  <p class="forgot-password text-center">
     <router-link to="forgot">Forgot password?</router-link>
+  </p>
+
+  <p class="registration text-center">
+    <router-link to="registration">You Don't have an account? Register</router-link>
   </p>
 
 </form>
