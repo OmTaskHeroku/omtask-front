@@ -26,7 +26,7 @@ export default {
   box-sizing: border-box;
 }
 body{
-  background: #167bff !important;
+  background: #167bff;
   min-height: 100vh;
   display: flex;
   font-weight: 400;
@@ -54,8 +54,9 @@ body, html, #app, #root, .auth-wrapper{
   text-align: left;
 }
 .auth-inner {
-  width: 450px;
-  margin: auto;
+  width: auto;
+  margin: 50px;
+  margin-top: 200px;
   background: #ffffff;
   box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
   padding: 40px 55px 45px 55px;

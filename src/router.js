@@ -3,6 +3,7 @@ import LoginMain from "@/components/LoginMain";
 import HomeMain from "@/components/HomeMain";
 import RegistrationMain from "@/components/RegistrationMain";
 import ForgotMain from "@/components/ForgotMain";
+import PortfolioMain from "@/components/PortfolioMain";
 
 const routes = [
     {
@@ -24,6 +25,11 @@ const routes = [
         path: "/forgot",
         name: "ForgotMain",
         component: ForgotMain,
+    },
+    {
+        path: "/profile",
+        name: "PortfolioMain",
+        component: PortfolioMain,
     },
 ];
 

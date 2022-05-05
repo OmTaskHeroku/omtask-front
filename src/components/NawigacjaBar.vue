@@ -10,6 +10,10 @@
           <li class="nav-item">
             <a href="/login" class="nav-link">Login</a>
           </li>
+          <li class="nav-item">
+            <a href="/profile" class="nav-link">Profile</a>
+          </li>
+
         </ul>
       </div>
     </div>
