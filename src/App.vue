@@ -54,8 +54,8 @@ body, html, #app, #root, .auth-wrapper{
   text-align: left;
 }
 .auth-inner {
-  width: auto;
-  margin: 50px;
+  width: content-box;
+  margin: auto;
   margin-top: 200px;
   background: #ffffff;
   box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);

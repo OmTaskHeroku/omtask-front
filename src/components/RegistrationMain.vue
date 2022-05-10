@@ -82,7 +82,7 @@ export default {
 
 <style scoped>
 form{
-  width: 50%;
+  width: 400px;
   margin: auto;
 }
 </style>
