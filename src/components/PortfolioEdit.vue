@@ -12,10 +12,10 @@
         <div class="col-md-4">
           <div class="profile-img">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52y5aInsxSm31CvHOFHWujqUx_wWTS9iM6s7BAm21oEN_RiGoog" alt=""/>
-<!--            <div class="file btn btn-lg btn-primary">-->
-<!--              Change Photo-->
-<!--              <input type="file" name="file"/>-->
-<!--            </div>-->
+            <div class="file btn btn-lg btn-primary">
+              Change Photo
+              <input type="file" name="file"/>
+            </div>
           </div>
         </div>
         <div class="col-md-6">
@@ -29,18 +29,15 @@
             <p class="proile-rating">RANKINGS : <span>8/10</span></p>
             <ul class="nav nav-tabs" id="myTab" role="tablist">
               <li class="nav-item">
-                <a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#home-tab" role="tab" aria-controls="home-tab" aria-selected="true">About</a>
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" id="nav-timeline-tab" data-toggle="tab" href="#timeline-tab" role="tab" aria-controls="timeline-tab" aria-selected="false">Timeline</a>
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Timeline</a>
               </li>
             </ul>
           </div>
         </div>
-        <div class="col-md-2">
-          <a href="/editprofile" role="button" class="profile-edit-btn">Edit Profile</a>
 
-        </div>
       </div>
       <div class="row">
         <div class="col-md-4">
@@ -51,15 +48,16 @@
             <a href="">Bootply Profile</a>
           </div>
         </div>
-        <div class="col-md-8">
+
+        <div class="col-md-8" id="data">
           <div class="tab-content profile-tab" id="myTabContent">
-            <div class="tab-pane fade show active" id="home-tab" role="tabpanel" aria-labelledby="nav-home-tab">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
               <div class="row">
                 <div class="col-md-6">
                   <label>UserName</label>
                 </div>
                 <div class="col-md-6">
-                  <p>kkowalski87</p>
+                  <p>kkowalska87</p>
                 </div>
               </div>
               <div class="row">
@@ -83,7 +81,7 @@
                   <label>Email</label>
                 </div>
                 <div class="col-md-6">
-                  <p>kkowalski_87@gmail.com</p>
+                  <p><input type="email" class="form-control input-sm" id="inputsm" v-model="email" placeholder="kkowalski_87@gmail.com" /></p>
                 </div>
               </div>
               <div class="row">
@@ -91,11 +89,37 @@
                   <label>Phone</label>
                 </div>
                 <div class="col-md-6">
-                  <p>123 456 789</p>
+                  <p><input type="text" class="form-control input-sm" id="inputsm" v-model="number" placeholder="123456789" /></p>
                 </div>
               </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <label>Password</label>
+                </div>
+                <div class="col-md-6">
+                  <p><input type="password" class="form-control input-sm" id="inputsm" v-model="password"/></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <label>Confirm Password</label>
+                </div>
+                <div class="col-md-6">
+                  <p><input type="password" class="form-control input-sm" id="inputsm" v-model="password_confirm"/></p>
+                </div>
+
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <p><a href="/profile" role="button" class="btn btn-primary btn-block">Back</a></p>
+                </div>
+                <div class="col-md-6">
+                  <p><a href="/profile" role="button" class="btn btn-primary btn-block">Confirm Changes</a></p>
+                </div>
+
+              </div>
             </div>
-            <div class="tab-pane fade" id="timeline-tab" role="tabpanel" aria-labelledby="nav-profile-tab">
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
               <div class="row">
                 <div class="col-md-6">
                   <label>Experience</label>
@@ -160,14 +184,8 @@ export default {
 body{
   background: -webkit-linear-gradient(left, #3931af, #00c6ff);
 }
-
-img{
-  width: 150px;
-  height: 150px;
-}
-
 .emp-profile{
-  padding: 3%;
+  padding: 2%;
   margin-top: 3%;
   margin-bottom: 3%;
   border-radius: 0.5rem;
@@ -258,5 +276,9 @@ img{
   font-weight: 600;
   color: #0062cc;
 }
-
+/*.row{*/
+/*  padding: 1%;*/
+/*  text-align: left;*/
+/*  align-items: center;*/
+/*}*/
 </style>
