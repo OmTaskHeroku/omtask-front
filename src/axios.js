@@ -1,3 +1,4 @@
 import axios from 'axios'
+import Vue from 'vue'
 
-axios.defaults.baseURL = 'http://localhost:8000/';
+axios.defaults.baseURL = 'https://omtask-back.herokuapp.com/';

@@ -1,14 +1,24 @@
 <template>
-  <form>
+  <form @submit.prevent="handleSubmit">
     <h3>Login</h3>
 
     <div class="form-group">
       <label>Username</label>
-      <input type="text" class="form-control" placeholder="Username" />
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Username"
+        v-model="username"
+      />
     </div>
     <div class="form-group">
       <label>Password</label>
-      <input type="password" class="form-control" placeholder="Password" />
+      <input
+        type="password"
+        class="form-control"
+        placeholder="Password"
+        v-model="password"
+      />
     </div>
 
     <button type="submit" class="btn btn-primary btn-block">Login</button>
@@ -26,8 +36,35 @@
 </template>
 
 <script>
+import axios from "axios";
 export default {
   name: "LoginMain",
+
+  data() {
+    return {
+      username: "",
+    };
+  },
+  methods: {
+    async handleSubmit() {
+      const data = new FormData({
+        username: this.username,
+        password: this.password,
+      });
+      console.log(data);
+      const res = await axios
+        .post("https://omtask-back.herokuapp.com/login", data)
+        .then((res) => {
+          console.log(res.data);
+        })
+        .catch((error) => {
+          this.errorMessage = error.message;
+          console.error("There was an error!", error);
+        });
+      res.data.data;
+      res.data.headers["Content-Type"];
+    },
+  },
 };
 </script>
 
