@@ -43,17 +43,18 @@ export default {
   data() {
     return {
       username: "",
+      password: "",
     };
   },
   methods: {
     async handleSubmit() {
-      const data = new FormData({
-        username: this.username,
-        password: this.password,
-      });
-      console.log(data);
       const res = await axios
-        .post("https://omtask-back.herokuapp.com/login", data)
+        .post("https://omtask-back.herokuapp.com/login", {
+          data: {
+            username: this.username,
+            password: this.password,
+          },
+        })
         .then((res) => {
           console.log(res.data);
         })
