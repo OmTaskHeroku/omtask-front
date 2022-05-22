@@ -4,17 +4,21 @@
   <div class="auth-wrapper">
     <div class="auth-inner">
       <router-view />
+
     </div>
   </div>
+  <FooterMain/>
 </div>
 </template>
 
 <script>
 import NawigacjaBar from './components/NawigacjaBar.vue'
+import FooterMain from "@/components/FooterMain";
 
 export default {
   name: 'App',
   components: {
+    FooterMain,
     NawigacjaBar
   }
 }
@@ -56,7 +60,8 @@ body, html, #app, #root, .auth-wrapper{
 .auth-inner {
   width: content-box;
   margin: auto;
-  margin-top: 200px;
+  margin-top: 230px;
+  margin-bottom: 200px;
   background: #ffffff;
   box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
   padding: 40px 55px 45px 55px;

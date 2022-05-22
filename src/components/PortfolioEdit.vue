@@ -176,7 +176,7 @@
 
 <script>
 export default {
-  name: "PortfolioMain"
+  name: "PortfolioEdit"
 }
 </script>
 

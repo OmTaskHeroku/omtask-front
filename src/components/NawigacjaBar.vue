@@ -9,6 +9,8 @@
           <a href="/profile">Profile</a>
           <a href="/registration">Register</a>
           <a href="/login">Login</a>
+          <a href="/contract">Contract</a>
+          <a href="/contract_info">Contract_Info</a>
         </div>
       </div>
     </aside>

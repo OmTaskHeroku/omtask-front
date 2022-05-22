@@ -5,6 +5,10 @@ import RegistrationMain from "@/components/RegistrationMain";
 import ForgotMain from "@/components/ForgotMain";
 import PortfolioMain from "@/components/PortfolioMain";
 import PortfolioEdit from "@/components/PortfolioEdit";
+import ContractMain from "@/components/ContractMain";
+import ContractInfo from "@/components/ContractInfo";
+import DescriptionMain from "@/components/DescriptionMain";
+import ReviewsMain from "@/components/ReviewsMain";
 
 const routes = [
     {
@@ -37,7 +41,29 @@ const routes = [
         name: "PortfolioEdit",
         component: PortfolioEdit,
     },
+    {
+        path: "/contract",
+        name: "ContractMain",
+        component: ContractMain,
+    },
+    {
+        path: "/contract_info",
+        name: "ContractInfo",
+        component: ContractInfo,
+    },
+    {
+        path: "/description",
+        name: "DescriptionMain",
+        component: DescriptionMain,
+    },
+    {
+        path: "/reviews",
+        name: "ReviewsMain",
+        component: ReviewsMain,
+    },
+
 ];
+
 
 const router = createRouter({
     history: createWebHistory(),
