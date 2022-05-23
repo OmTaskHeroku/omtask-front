@@ -9,6 +9,8 @@ import ContractMain from "@/components/ContractMain";
 import ContractInfo from "@/components/ContractInfo";
 import DescriptionMain from "@/components/DescriptionMain";
 import ReviewsMain from "@/components/ReviewsMain";
+import TestTest from "@/components/TestTest";
+
 
 const routes = [
     {
@@ -61,7 +63,11 @@ const routes = [
         name: "ReviewsMain",
         component: ReviewsMain,
     },
-
+    {
+        path: "/test",
+        name: "TestTest",
+        component: TestTest,
+    },
 ];
 
 

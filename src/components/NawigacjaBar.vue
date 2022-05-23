@@ -11,6 +11,7 @@
           <a href="/login">Login</a>
           <a href="/contract">Contract</a>
           <a href="/contract_info">Contract_Info</a>
+          <a href="/test">test</a>
         </div>
       </div>
     </aside>
